@@ -41,3 +41,6 @@
     
 </body>
 </html>
+<!-- RewriteEngine on
+RewriteCond %{SERVER_PORT} 80
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L] -->
