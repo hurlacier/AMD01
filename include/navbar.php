@@ -19,7 +19,7 @@
         <a class="nav-link font-weight-bold" href="shampooing.php">Shampooings</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="soin.php">Soins cheveux</a>
+        <a class="nav-link font-weight-bold" href="soin.php">Soins</a>
       </li>
       <li class="nav-item">
         <a class="nav-link font-weight-bold" href="spray.php">Coiffants</a>
@@ -30,6 +30,9 @@
     </ul>
 
     <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href=""><i class="fas fa-2x fa-user"></i></a>
+      </li>
       <li class="nav-item">
         <a class="nav-link font-weight-bold" href=""><i class="fas fa-2x fa-shopping-bag"></i></a>
       </li>
