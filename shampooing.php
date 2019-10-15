@@ -10,6 +10,8 @@
     <main class="my-5 py-2">
         <section class="mt-5 pt-5">
             <article class="row justify-content-center w-100">
+            
+
                 <!-- Card -->
                 <div class="card m-3 col-3">
 

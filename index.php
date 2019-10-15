@@ -91,7 +91,7 @@
                         <h4 class="card-title"><a href="" class="text-dark">Anti-Chute</a></h4>
                         <!-- Text -->
                         <p class="card-text">Shampoing SLS cheveux colorés</p>
-                        <div class="row"><p class="font-weight-bold">13.00€</p></div>
+                        <div class="row"><p class="font-weight-bold">27.00€</p></div>
                         <!-- Button -->
                         <div class="row">
                             <a href="#" class="btn btn-dark">Voir plus</a>
@@ -121,7 +121,7 @@
                         <h4 class="card-title"><a href="" class="text-dark">Huile Précieuse</a></h4>
                         <!-- Text -->
                         <p class="card-text">Shampoing SLS cheveux secs</p>
-                        <div class="row"><p class="font-weight-bold">13.00€</p></div>
+                        <div class="row"><p class="font-weight-bold">17.00€</p></div>
                         <!-- Button -->
                         <div class="row">
                             <a href="#" class="btn btn-dark">Voir plus</a>
@@ -151,7 +151,7 @@
                         <h4 class="card-title"><a href="" class="text-dark">Color One Shot</a></h4>
                         <!-- Text -->
                         <p class="card-text">Shampoing SLS cheveux colorés</p>
-                        <div class="row"><p class="font-weight-bold">13.00€</p></div>
+                        <div class="row"><p class="font-weight-bold">17.00€</p></div>
                         <!-- Button -->
                         <div class="row">
                             <a href="#" class="btn btn-dark">Voir plus</a>
@@ -181,7 +181,7 @@
                         <h4 class="card-title"><a href="" class="text-dark">Color One Shot Brown</a></h4>
                         <!-- Text -->
                         <p class="card-text">Shampoing SLS cheveux secs</p>
-                        <div class="row"><p class="font-weight-bold">13.00€</p></div>
+                        <div class="row"><p class="font-weight-bold">17.00€</p></div>
                         <!-- Button -->
                         <div class="row">
                             <a href="#" class="btn btn-dark">Voir plus</a>
@@ -211,7 +211,7 @@
                         <h4 class="card-title"><a href="" class="text-dark">Gel coiffant fixation forte</a></h4>
                         <!-- Text -->
                         <p class="card-text">Shampoing SLS cheveux colorés</p>
-                        <div class="row"><p class="font-weight-bold">13.00€</p></div>
+                        <div class="row"><p class="font-weight-bold">15.00€</p></div>
                         <!-- Button -->
                         <div class="row">
                             <a href="#" class="btn btn-dark">Voir plus</a>

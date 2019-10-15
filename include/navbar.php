@@ -22,6 +22,9 @@
         <a class="nav-link font-weight-bold" href="soin.php">Soins</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="">traitements</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link font-weight-bold" href="spray.php">Coiffants</a>
       </li>
       <li class="nav-item">
@@ -31,7 +34,7 @@
 
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link font-weight-bold" href=""><i class="fas fa-2x fa-user"></i></a>
+        <a class="nav-link font-weight-bold" href="login.php"><i class="fas fa-2x fa-user"></i></a>
       </li>
       <li class="nav-item">
         <a class="nav-link font-weight-bold" href=""><i class="fas fa-2x fa-shopping-bag"></i></a>
