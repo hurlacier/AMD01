@@ -32,14 +32,45 @@
       </li>
     </ul>
 
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="login.php"><i class="fas fa-2x fa-user"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link font-weight-bold" href=""><i class="fas fa-2x fa-shopping-bag"></i></a>
-      </li>
-    </ul>
+    <?php
+            if (session_status() !== PHP_SESSION_ACTIVE) {
+                session_start();
+            }
+            // On teste si une session de 'User' est déjà active
+            // Si oui on affiche le message de bienvenue et le bouton de déconnection
+            if (isset($_SESSION['user_name']) && !empty($_SESSION['user_name'])) {
+                echo '<ul class="navbar-nav ">
+                        <li class="nav-item dropdown">
+                          <div class=" d-flex flex-column"  id="navbarDropdownMenuLink" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                            <i class="nav-link fas fa-2x fa-user"></i>
+                            <p class="font-weight-bold">'.$_SESSION['user_name'] .'</p>
+                          </div>
+                          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Paramètre de Compte</a>
+                            <a class="dropdown-item" href="traitements/deconnexion.php">Deconnexion</a>
+                          </div>
+                        </li>
+                        <li class="nav-item ml-5 mr-3">
+                          <i class="nav-link fas fa-2x fa-shopping-bag"></i>
+                          <p class="font-weight-bold">Panier</p>
+                        </li>
+                      </ul>';
+            }else{
+              echo '<ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a class="nav-link border-right" href="login.php">Se connecter</a>
+                      </li>
+                      <li class="">
+                        <a class="nav-link" href="inscription.php">S\'incrire</i></a>
+                      </li>
+                      <li class="nav-item ml-5 mr-3">
+                        <i class="fas fa-2x fa-shopping-bag nav-link"></i>
+                        <p class="font-weight-bold">Panier</p>
+                      </li>
+                    </ul>';
+            }
+        ?>
   </div>
   <!-- Collapsible content -->
 
