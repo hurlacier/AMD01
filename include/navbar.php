@@ -16,26 +16,24 @@
     <!-- Links -->
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Shampooings</a>
+        <a class="nav-link font-weight-bold" href="shampooing.php">Shampooings</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Masque cheveux</a>
+        <a class="nav-link font-weight-bold" href="soin.php">Soins cheveux</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Soins cheveux</a>
+        <a class="nav-link font-weight-bold" href="spray.php">Coiffants</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Coiffants</a>
+        <a class="nav-link font-weight-bold" href="coffrets.php">Coffrets</a>
       </li>
+    </ul>
+
+    <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link" href="#">Huiles</a>
+        <a class="nav-link font-weight-bold" href=""><i class="fas fa-2x fa-shopping-bag"></i></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cires</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="coffrets.php">Coffrets</a>
-      </li>
+    </ul>
   </div>
   <!-- Collapsible content -->
 

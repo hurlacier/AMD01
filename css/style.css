@@ -1,12 +1,7 @@
 #logo{
-    height: 5vh;
+    height: 7vh;
 }
 
 .carousel-inner img{
     height: 100vh;
-}
-
-.article{
-    height: 35vh;
-    width: 35vw;
 }

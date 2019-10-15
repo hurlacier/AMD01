@@ -16,7 +16,7 @@
 
             <!-- Card image -->
                 <div class="view overlay">
-                    <img class="card-img-top article img-fluid" src="img/coffret01face.jpg" alt="Card image cap">
+                    <img class="card-img-top  img-fluid" src="img/coffret/coffret01face.jpg" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -46,7 +46,7 @@
 
             <!-- Card image -->
                 <div class="view overlay">
-                    <img class="card-img-top article img-fluid" src="img/coffret02face.jpg" alt="Card image cap">
+                    <img class="card-img-top  img-fluid" src="img/coffret/coffret02face.jpg" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -76,7 +76,7 @@
 
             <!-- Card image -->
                 <div class="view overlay">
-                    <img class="card-img-top article img-fluid" src="img/coffret03face.jpg" alt="Card image cap">
+                    <img class="card-img-top  img-fluid" src="img/coffret/coffret03face.jpg" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -106,7 +106,7 @@
 
             <!-- Card image -->
                 <div class="view overlay">
-                    <img class="card-img-top article img-fluid" src="img/coffret04face.jpg" alt="Card image cap">
+                    <img class="card-img-top  img-fluid" src="img/coffret/coffret04face.jpg" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -136,7 +136,7 @@
 
             <!-- Card image -->
                 <div class="view overlay">
-                    <img class="card-img-top article img-fluid" src="img/coffret04face.jpg" alt="Card image cap">
+                    <img class="card-img-top  img-fluid" src="img/coffret/coffret04face.jpg" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -166,7 +166,7 @@
 
             <!-- Card image -->
                 <div class="view overlay">
-                    <img class="card-img-top article img-fluid" src="img/coffret05face.jpg" alt="Card image cap">
+                    <img class="card-img-top  img-fluid" src="img/coffret/coffret05face.jpg" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -190,6 +190,66 @@
 
             </div>
             <!-- Card -->
+
+            <!-- Card -->
+            <div class="card m-3 col-3">
+
+<!-- Card image -->
+    <div class="view overlay">
+        <img class="card-img-top img-fluid" src="img/masque/masque03face.jpg" alt="Card image cap">
+        <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body">
+
+        <!-- Title -->
+        <h4 class="card-title"><a href="" class="text-dark">Shampoing et masque cheveux secs sans sulfates</a></h4>
+        <!-- Text -->
+        <p class="card-text">Shampoing et masque pour cheveux secs</p>
+        <div class="row"><p class="font-weight-bold">29.00€</p></div>
+        <!-- Button -->
+        <div class="row">
+            <a href="#" class="btn btn-dark">Voir plus</a>
+            <a href="" class="btn btn-white">Ajouter au panier</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- Card -->
+
+<!-- Card -->
+<div class="card m-3 col-3">
+
+<!-- Card image -->
+    <div class="view overlay">
+        <img class="card-img-top img-fluid" src="img/masque/masque04face.jpg" alt="Card image cap">
+        <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body">
+
+        <!-- Title -->
+        <h4 class="card-title"><a href="" class="text-dark">Shampoing et masque cheveux colorés sans sulfates</a></h4>
+        <!-- Text -->
+        <p class="card-text">Shampoing et masque pour cheveux colorés</p>
+        <div class="row"><p class="font-weight-bold">29.00€</p></div>
+        <!-- Button -->
+        <div class="row">
+            <a href="#" class="btn btn-dark">Voir plus</a>
+            <a href="" class="btn btn-white">Ajouter au panier</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- Card -->
         </article>
     </section>
 </main>

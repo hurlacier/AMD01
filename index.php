@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php require "include/head.php"; ?>
-    <title>Aïda M'DALLA Cosmétique capillaire | Produits pour cheveux qualité Professionnelle</title>
+    <title>Aïda M'DALLA Cosmétique capillaire | Produits pour cheveux de qualité Professionnelle</title>
 </head>
 <body class="p-0 h-100">
 
