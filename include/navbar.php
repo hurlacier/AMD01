@@ -1,5 +1,5 @@
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-white z-depth-3 border-bottom fixed-top scrolling-navbar">
 
   <!-- Navbar brand -->
   <a class="navbar-brand" href="index.php"><img id="logo" src="img/logo.png" alt="logo"></a>
@@ -16,9 +16,6 @@
     <!-- Links -->
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Coffrets</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#">Shampooings</a>
       </li>
       <li class="nav-item">
@@ -28,13 +25,16 @@
         <a class="nav-link" href="#">Soins cheveux</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Spray</a>
+        <a class="nav-link" href="#">Coiffants</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Huiles</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Cires</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="coffrets.php">Coffrets</a>
       </li>
   </div>
   <!-- Collapsible content -->
