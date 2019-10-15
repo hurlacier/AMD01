@@ -28,7 +28,7 @@
     <button class="btn btn-dark btn-block" type="submit">Se connecter</button>
 
     <p>
-        <a href="" target="_blank">Mot de passe ou adresse mail oubié?</a>
+        <a href="" target="_blank">Mot de passe oubié?</a>
     </p>
 
 
