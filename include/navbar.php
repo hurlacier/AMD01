@@ -53,7 +53,6 @@
                         </li>
                         <li class="nav-item ml-5 mr-3">
                           <i class="nav-link fas fa-2x fa-shopping-bag"></i>
-                          <p class="font-weight-bold">Panier</p>
                         </li>
                       </ul>';
             }else{
@@ -66,7 +65,6 @@
                       </li>
                       <li class="nav-item ml-5 mr-3">
                         <i class="fas fa-2x fa-shopping-bag nav-link"></i>
-                        <p class="font-weight-bold">Panier</p>
                       </li>
                     </ul>';
             }

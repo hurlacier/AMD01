@@ -22,22 +22,46 @@
 <?php
 echo '<a href="index.php"><button>RETOUR A LA CONNEXION</button></a>';
 ?>
+<main class="vh-100 row justify-content-center align-items-center w-100">
 
-<p><strong><u>Entrez vos informations d'inscription</u> :</strong></p>
-
-<form class="mt-5 pt-5" action="traitements/traitement_inscription.php" method="post">
-    <p>
-   	<label for="nom">Nom : </label>
-  	<input type="text" name="nom" placeholder="champ obligatoire"/><br><br>
-  	<label for="mail">Email : </label>
-  	<input type="email" name="mail" placeholder="champ obligatoire"/><br><br>
-  	<label for="pass">Mot de passe : </label>		
-  	<input type="password" name="pass" placeholder="champ obligatoire"/>
-    <p><i>(8 caractères minimum avec au moins une lettre en majuscule et minuscule, un chiffre et un caractère spécial)</i></p>
-    <label for="confirm_pass">Confirmer votre mot de passe : </label>        
-    <input type="password" name="confirm_pass" placeholder="champ obligatoire"/><br><br>    
-    <input type="submit" value="Valider" />
-    </p>
+<form class="text-center border border-light px-5 pt-5 col-7" action="traitements/traitement_inscription.php" method="post">
+    <p class="h4 mb-4">Inscription</p>
+    <div class="row">
+        <div class="col-6">
+        <label for="nom">Nom : </label>
+            <input type="text" name="nom" class="form-control mb-4" placeholder="champ obligatoire"/>
+        </div>
+        <div class="col-6">
+            <label for="prenom">Prénom : </label>
+            <input type="text" name="prenom" class="form-control mb-4" placeholder="champ obligatoire"/>
+        </div>
+        <div class="col-6">
+            <label for="mail">Email : </label>
+            <input type="email" name="mail" class="form-control mb-4" placeholder="champ obligatoire"/>
+        </div>
+        <div class="col-6">
+            <label for="phone">Téléphone : </label>
+            <input type="phone" name="phone" class="form-control mb-4" placeholder="champ obligatoire"/>
+        </div>
+        <div class="col-7 mx-auto">
+            <label for="ddn">Date de naissance : </label>
+            <input type="date" name="ddn" class="form-control mb-4" placeholder="champ obligatoire"/>
+        </div>
+        <div class="col-6">
+            <label for="pass">Mot de passe : </label>		
+            <input type="password" name="pass" class="form-control mb-4" placeholder="champ obligatoire"/>
+        </div>
+        <div class="col-6 mt-5">
+            <p><i>(8 caractères minimum avec au moins une lettre en majuscule et minuscule, un chiffre et un caractère spécial)</i></p>
+        </div>
+        <div class="col-6">
+            <label for="confirm_pass">Confirmer votre mot de passe : </label>        
+            <input type="password" name="confirm_pass" class="form-control mb-4" placeholder="champ obligatoire"/>  
+        </div>
+        <div class="col-12 mb-3">
+            <input class="btn btn-dark btn-block" type="submit" value="Valider" />
+        </div>
+    </div>
 </form>
 
 <p style="color: red">
@@ -68,6 +92,7 @@ if (isset($_GET['Message'])) {
    }      
 }
 ?>
+</main>
 <?php require "include/footer.php"; ?>
     
 </body>
