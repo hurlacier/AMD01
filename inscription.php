@@ -58,6 +58,10 @@ echo '<a href="index.php"><button>RETOUR A LA CONNEXION</button></a>';
             <label for="confirm_pass">Confirmer votre mot de passe : </label>        
             <input type="password" name="confirm_pass" class="form-control mb-4" placeholder="champ obligatoire"/>  
         </div>
+        <div class="col-6 custom-control custom-checkbox">
+            <input type="checkbox" name="validecgu" id="validecgu" class="custom-control-input">
+            <label class="custom-control-label" for="validecgu">J'ai lue et j'accepte les <a href="">Conditions générale d'utilisation d'utilisation</a></label>
+        </div>
         <div class="col-12 mb-3">
             <input class="btn btn-dark btn-block" type="submit" value="Valider" />
         </div>

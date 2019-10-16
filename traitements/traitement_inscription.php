@@ -50,9 +50,9 @@ if(isset($_POST) && !empty($_POST)){
 						// On retourne à l'accueil
 						
 						// Préparation du mail contenant le lien d'activation
-						$destinataire = $mail;
+						$destinataire = $_POST['mail'];
 						$sujet = "Activer votre compte" ;
-						$entete = "From: inscription@amd.com" ;
+						$entete = "From: local@mail.com" ;
 						
 						// Le lien d'activation est composé du login(log) et de la clé(cle)
 						$message = 'Bienvenue sur Aïda M\'DALLA Cométique,

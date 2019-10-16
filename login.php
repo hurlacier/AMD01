@@ -24,6 +24,11 @@
     <label for="pass">Votre mot de passe : </label>  
     <input type="password" name="pass" class="form-control mb-4" placeholder="Votre mot de passe">
 
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" name="maintienco" id="maintienco" class="custom-control-input">
+        <label class="custom-control-label" for="maintienco">Rester connecté?</label>
+    </div>
+
     
     <button class="btn btn-dark btn-block" type="submit" value="Valider">Se connecter</button>
 
