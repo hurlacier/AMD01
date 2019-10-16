@@ -50,24 +50,26 @@ if(isset($_POST) && !empty($_POST)){
 						// On retourne à l'accueil
 						
 						// Préparation du mail contenant le lien d'activation
-						$destinataire = $_POST['mail'];
-						$sujet = "Activer votre compte" ;
-						$entete = "From: local@mail.com" ;
+						$to = $_POST['mail'];
+						$subject = "Activer votre compte" ;
+						$entete = "From: zakariatheblack@gmail.com" ;
 						
 						// Le lien d'activation est composé du login(log) et de la clé(cle)
+						//https://m-gut.developpez.com/tutoriels/php/mail-confirmation/
 						$message = 'Bienvenue sur Aïda M\'DALLA Cométique,
 						
-						Pour activer votre compte, veuillez cliquer sur le lien ci dessous
-						ou copier/coller dans votre navigateur internet.
+Pour activer votre compte, veuillez cliquer sur le lien ci dessous
+ou copier/coller dans votre navigateur internet.
 						
-						http://votresite.com/activation.php?log='.urlencode($prenom).'&cle='.urlencode($cle).'
-						
-						
-						---------------
-						Ceci est un mail automatique, Merci de ne pas y répondre.';
+http://localhost/AMD01/activation.php?log='.urlencode($prenom).'&cle='.urlencode($cle).'
 						
 						
-						mail($destinataire, $sujet, $message, $entete) ; // Envoi du mail
+----------------------------------------------------------
+
+Ceci est un mail automatique, Merci de ne pas y répondre.';
+						
+						
+						mail($to, $subject, $message, $entete) ; // Envoi du mail
 						header("Location:../index.php");
 					} else { 
 						// Ici l'email existe déjà
