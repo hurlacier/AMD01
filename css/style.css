@@ -5,3 +5,7 @@
 .carousel-inner img{
     height: 100vh;
 }
+
+.card{
+    padding: 0px;
+}

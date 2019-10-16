@@ -10,7 +10,7 @@
 
 <main class="my-5 py-5">
         <section class="pt-5 row w-100 align-items-left d-flex justify-content-end">
-            <article class="row d-flex flex-nowwrap col-8">
+            <article class="row d-flex flex-nowwrap col-10">
 
             <!-- Card -->
             <div class="card m-3 col-3">
