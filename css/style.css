@@ -9,3 +9,13 @@
 .card{
     padding: 0px;
 }
+
+.alert{
+    margin-top: 35%;
+    position: fixed;
+    z-index: 100;
+}
+
+.alert:hover{
+    box-shadow: 0px 0px 5px 5px white;
+}

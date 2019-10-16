@@ -66,36 +66,36 @@ echo '<a href="index.php"><button>RETOUR A LA CONNEXION</button></a>';
             <input class="btn btn-dark btn-block" type="submit" value="Valider" />
         </div>
     </div>
+    <p style="color: red">
+        <?php
+            // On traite les retours de traitement_inscription.php en 'GET' pour afficher le message adapté
+            if (isset($_GET['Message'])) {
+            switch ($_GET['Message']) {
+                    case '0':
+                        echo 'Votre eMail est déjà présent';
+                    break;
+                    case '1':
+                        echo 'Mot de passe non conforme';
+                    break;
+                    case '2':
+                        echo 'Les 2 mots de passe sont différents';
+                        break;
+                    case '3':
+                        echo 'Erreur dans les champs';
+                    break;
+                    case '4':
+                        echo 'Aucune donnée reçue';
+                        break;
+                    case '5':
+                        echo 'eMail invalide';
+                        break;                 
+                default:
+                    break;
+            }      
+            }
+        ?>
+    </p>
 </form>
-
-<p style="color: red">
-<?php
-// On traite les retours de traitement_inscription.php en 'GET' pour afficher le message adapté
-if (isset($_GET['Message'])) {
-   switch ($_GET['Message']) {
-        case '0':
-            echo 'Votre eMail est déjà présent';
-           break;
-        case '1':
-            echo 'Mot de passe non conforme';
-           break;
-        case '2':
-            echo 'Les 2 mots de passe sont différents';
-            break;
-        case '3':
-            echo 'Erreur dans les champs';
-           break;
-        case '4':
-            echo 'Aucune donnée reçue';
-            break;
-        case '5':
-            echo 'eMail invalide';
-            break;                 
-       default:
-           break;
-   }      
-}
-?>
 </main>
 <?php require "include/footer.php"; ?>
     

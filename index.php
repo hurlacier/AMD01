@@ -5,8 +5,43 @@
     <title>Aïda M'DALLA Cosmétique capillaire | Produits pour cheveux de qualité Professionnelle</title>
 </head>
 <body class="p-0 h-100">
-
 <?php require "include/navbar.php"; ?>
+
+    <?php
+        // On traite les retours de traitement_inscription.php en 'GET' pour afficher le message adapté
+        if (isset($_GET['Message'])) {
+            switch ($_GET['Message']) {
+                case '5':
+                    echo '<div class="row justify-content-center">',
+                            '<div id="alert" class="alert alert-success">',
+                                'Votre Compte à été crée avec succès! Un mail de confirmation vous à été envoyé pour l\'activer',
+                            '</div>',
+                        '</div>',
+                        '<script type="text/javascript" src="js/alert.js"></script>';
+                break;
+                case '6':
+                    echo '<div class="row justify-content-center">',
+                            '<div id="alert" class="alert alert-success">',
+                                'Votre Compte à été activé avec succès! Vous pouvez maintenant vous connecter!',
+                            '</div>',
+                        '</div>',
+                        '<script type="text/javascript" src="js/alert.js"></script>';
+                break;
+                case '7':
+                    echo '<div class="row justify-content-center">',
+                            '<div id="alert" class="alert alert-danger">',
+                                'Veuiller Activer votre compte pour vous connecter!',
+                            '</div>',
+                        '</div>',
+                        '<script type="text/javascript" src="js/alert.js"></script>';
+                break;
+            }      
+        }
+    ?>
+    
+    
+                        
+
 
 <div id="carouselExampleControls" class="carousel slide carousel-fade m-0" data-ride="carousel">
   <div class="carousel-inner">

@@ -69,7 +69,7 @@ Ceci est un mail automatique, Merci de ne pas y répondre.';
 						
 						
 						mail($to, $subject, $message) ; // Envoi du mail
-						header("Location:../index.php");
+						header("Location:../index.php?Message=5");
 					} else { 
 						// Ici l'email existe déjà
 						header("Location:../inscription.php?Message=0"); 
