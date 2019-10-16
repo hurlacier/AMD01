@@ -40,8 +40,8 @@
 <main class="my-5 py-2">
     <h1 class="text-center mt-5">Nouveaux Articles</h1>
     <hr>
-        <section class="pt-5">
-            <article class="row justify-content-center w-100">
+        <section class="pt-5 row w-100 align-items-left d-flex justify-content-center">
+            <article class="row d-flex justify-content-center w-100 col-8">
 
                 <!-- Card -->
                 <div class="card m-3 col-3">
