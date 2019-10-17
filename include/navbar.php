@@ -41,7 +41,7 @@
             if (isset($_SESSION['user_name']) && !empty($_SESSION['user_name'])) {
                 if($_SESSION['user_id'] != $_GET['profile']){
                   $_GET['page'];
-                  header("Location:?page=".$_GET['page']."&profile=".$_SESSION['user_id']."");
+                  header("Location:?=".$_GET['page']."&profile=".$_SESSION['user_id']."");
                   // urlencode($_GET['profile']) === $_SESSION['user_id'];
                 }else{
                   echo '<ul class="navbar-nav ">
