@@ -32,7 +32,7 @@ if(isset($_POST) && !empty($_POST)){
 				// Ici le mot de passe est conforme au regex demandé
 
 				// On ajoute une entrée dans la table en utilisant un 'marqueur' dans la préparation de la requête
-				$login_user = $bdd->prepare('SELECT prenom, password FROM user WHERE mail = :mail');
+				$login_user = $bdd->prepare('SELECT id, prenom, nom, mail, password FROM user WHERE mail = :mail');
 				// On l'exécute en passant la valeur du marqueur :mail dans un tableau
 				$login_user->execute(array('mail' => $mail_user));
 				$user = $login_user->fetch();
@@ -59,7 +59,10 @@ if(isset($_POST) && !empty($_POST)){
 								// On mémorise le nom d'utilisateur dans la session
 								// et on retourne à l'accueil
 								$_SESSION['user_name'] = $user['prenom'];
-								header("Location:../index.php");
+								$_SESSION['user_names'] = $user['nom'];
+								$_SESSION['user_mail'] = $user['mail'];
+								$_SESSION['user_id'] = $user['id'];
+								header("Location:../index.php?profile=".$_SESSION['user_id']."");
 							}
 						else // Sinon la connexion est refusé...
 							{

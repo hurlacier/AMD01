@@ -67,6 +67,9 @@
                 case '8':
                     echo '!! Merci de bien vouloir activer votre compte !!';
                  break; 
+                 case '9':
+                    echo '!! Veuillez vous connecter pour accéder à ce contenu !!';
+                 break; 
             default:
                 break;
         }

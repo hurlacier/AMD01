@@ -30,7 +30,15 @@
                 case '7':
                     echo '<div class="row justify-content-center">',
                             '<div id="alert" class="alert alert-danger">',
-                                'Veuiller Activer votre compte pour vous connecter!',
+                                'Vous êtes déjà connecté!',
+                            '</div>',
+                        '</div>',
+                        '<script type="text/javascript" src="js/alert.js"></script>';
+                break;
+                case '8':
+                    echo '<div class="row justify-content-center">',
+                            '<div id="alert" class="alert alert-danger">',
+                                'Bien tenté mais non!',
                             '</div>',
                         '</div>',
                         '<script type="text/javascript" src="js/alert.js"></script>';
