@@ -4,12 +4,12 @@ include_once("../include/connexion.php");
  
  
 // Récupération des variables nécessaires à l'activation
-$prenom = $_GET['log'];
+$mail = $_GET['log'];
 $cle = $_GET['cle'];
  
-// Récupération de la clé correspondant au $prenom dans la base de données
-$stmt = $bdd->prepare("SELECT cle, actif FROM user WHERE prenom like :prenom ");
-if($stmt->execute(array(':prenom' => $prenom)) && $row = $stmt->fetch())
+// Récupération de la clé correspondant au $mail dans la base de données
+$stmt = $bdd->prepare("SELECT cle, actif FROM user WHERE mail like :mail ");
+if($stmt->execute(array(':mail' => $mail)) && $row = $stmt->fetch())
   {
     $clebdd = $row['cle'];	// Récupération de la clé
     $actif = $row['actif']; // $actif contiendra alors 0 ou 1
@@ -29,8 +29,8 @@ else // Si ce n'est pas le cas on passe aux comparaisons
           echo "Votre compte a bien été activé !";
  
           // La requête qui va passer notre champ actif de 0 à 1
-          $stmt = $bdd->prepare("UPDATE user SET actif = 1 WHERE prenom like :prenom ");
-          $stmt->bindParam(':prenom', $prenom);
+          $stmt = $bdd->prepare("UPDATE user SET actif = 1 WHERE mail like :mail ");
+          $stmt->bindParam(':mail', $mail);
           $stmt->execute();
           header("Location:../index.php?Message=6");
        }

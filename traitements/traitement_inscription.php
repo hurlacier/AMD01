@@ -60,7 +60,7 @@ if(isset($_POST) && !empty($_POST)){
 Pour activer votre compte, veuillez cliquer sur le lien ci dessous
 ou copier/coller dans votre navigateur internet.
 						
-http://localhost/AMD01/activation.php?log='.urlencode($prenom).'&cle='.urlencode($cle).'
+http://localhost/AMD01/traitements/activation.php?log='.urlencode($mail).'&cle='.urlencode($cle).'
 						
 						
 ----------------------------------------------------------
