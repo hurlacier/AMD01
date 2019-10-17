@@ -65,7 +65,7 @@
                     echo '!! Merci vous êtes bien enregistré !!';
                     break; 
                 case '8':
-                    echo '!! Merci de bien vouloir activé votre compte !!';
+                    echo '!! Merci de bien vouloir activer votre compte !!';
                  break; 
             default:
                 break;

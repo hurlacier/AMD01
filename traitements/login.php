@@ -44,10 +44,30 @@ if(isset($_POST) && !empty($_POST)){
 					if (password_verify ($pass_user, $user['password'])) {
 					// Ici le mot de passe est le bon
 
-						// On mémorise le nom d'utilisateur dans la session
-						// et on retourne à l'accueil
-						$_SESSION['user_name'] = $user['prenom'];
-						header("Location:../index.php");
+					$mail = $_POST['mail'];
+ 
+					// Récupération de la valeur du champ actif pour le mail $mail
+					$stmt = $bdd->prepare("SELECT actif FROM user WHERE mail like :mail ");
+					if($stmt->execute(array(':mail' => $mail))  && $row = $stmt->fetch())
+					  {
+						   $actif = $row['actif']; // $actif contiendra alors 0 ou 1
+						   // Il ne nous reste plus qu'à tester la valeur du champ 'actif' pour
+							// autoriser ou non le membre à se connecter
+							
+							if($actif == '1') // Si $actif est égal à 1, on autorise la connexion
+							{
+								// On mémorise le nom d'utilisateur dans la session
+								// et on retourne à l'accueil
+								$_SESSION['user_name'] = $user['prenom'];
+								header("Location:../index.php");
+							}
+						else // Sinon la connexion est refusé...
+							{
+								header("Location:../login.php?Message=8");
+							}
+					  }
+					 
+					
 					} else {
 					// Ici on a pas le bon mot de passe	
 					header("Location:../login.php?Message=1");
