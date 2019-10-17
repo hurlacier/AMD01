@@ -8,7 +8,7 @@ $mail = $_GET['log'];
 $cle = $_GET['cle'];
  
 // Récupération de la clé correspondant au $mail dans la base de données
-$stmt = $bdd->prepare("SELECT cle, actif FROM user WHERE mail like :mail ");
+$stmt = $bdd->prepare("SELECT cle, actif, mail FROM user WHERE mail like :mail ");
 if($stmt->execute(array(':mail' => $mail)) && $row = $stmt->fetch())
   {
     $clebdd = $row['cle'];	// Récupération de la clé
@@ -32,6 +32,27 @@ else // Si ce n'est pas le cas on passe aux comparaisons
           $stmt = $bdd->prepare("UPDATE user SET actif = 1 WHERE mail like :mail ");
           $stmt->bindParam(':mail', $mail);
           $stmt->execute();
+          // Ici tous c'est bien passé
+						// On retourne à l'accueil
+						
+						// Préparation du mail contenant le lien d'activation
+						$to = $mail;
+						$subject = "Compte Activé" ;
+						
+						// Le lien d'activation est composé du login(log) et de la clé(cle)
+						//https://m-gut.developpez.com/tutoriels/php/mail-confirmation/
+						$message = 'Bienvenue chez Aïda M\'DALLA Cosmétique,
+						
+Votre compte est désormai activé!
+Cliquez sur ce lien pour vous connecter à votre espaces personnel.
+						
+http://localhost/AMD01/login.php
+						
+						
+----------------------------------------------------------
+
+Ceci est un mail automatique, Merci de ne pas y répondre.';
+          mail($to, $subject, $message) ; // Envoi du mail
           header("Location:../index.php?Message=6");
        }
      else // Si les deux clés sont différentes on provoque une erreur...
